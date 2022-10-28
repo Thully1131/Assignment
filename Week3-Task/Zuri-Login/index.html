@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/Zuri-Login/style.css'>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">
+            <h2>Welcome to Zuri</h2>
+            <img src="/Zuri-Login/Img1.jpg" alt="img" class="sign-img">
+        </div>
+
+        <div class="right">
+            <h2>Get Started</h2>
+            <p>Already have account ?  <a href="/Zuri-Login/login.html" id="login">Sign In </a></p>
+
+            <form id="form" action="/Zuri-Login/login.html">
+                <label for="firstName" id="lFirstname" >First Name</label><br>
+                <input type="text" id="firstName" required /><br>
+                <label for="lastName" id="lLastname">Last Name</label><br>
+                <input type="text" id="lastName" required /><br>
+                <label for="mobileNumber" id="tel">Mobile Number</label><br>
+                <input type="tel" id="mobileNumber" required /><br>
+                <label for="gender" id="lgender">Gender</label>
+                <select>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Other</option>
+                </select><br>
+                <label for="dob" id="ldob">Date of Birth</label><br>
+                <input type="date" id="dob" required><br>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" value="#ff0000"><br>
+                <label for="email" id="elabel">Email</label> <br>
+                <input type="email" id="email" placeholder="eric@gmail.com" required> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" id="password" minlength="8" required> <br><br>
+                <button type="submit" id="btn1">Register </button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
