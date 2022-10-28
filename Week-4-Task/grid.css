@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+body {
+    background-color: rgb(7, 25, 42);
+}
+nav button a{
+    color: black;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#nav button {
+	background-color: white;
+    border-radius: 30px;
+}
+.flex-container {
+    width: 30%;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'one one one one two two'
+        'three three three four four four '
+        'three three three five five five'
+    ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.one {
+    background-color: red;
+    grid-area: one;
+    height: 100px;
+}
+
+.two {
+    background-color: orange;
+    grid-area: two;
+    height: 100px;
+}
+
+.three {
+    background-color: rgb(12, 159, 12);
+    grid-area: three;
+}
+
+.four {
+    background-color: rgb(24, 24, 232);
+    grid-area: four;
+    height: 100px;
+}
+
+.five {
+    background-color: rgb(154, 13, 154);
+    grid-area: five;
+    height: 100px;
+}
+  
+  
